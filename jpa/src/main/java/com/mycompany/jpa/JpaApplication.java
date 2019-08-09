@@ -27,10 +27,10 @@ public class JpaApplication {
         Query findAll = entityManager.createQuery("SELECT h FROM Helloworld h");
         List<Helloworld> allMessages = findAll.getResultList();
         allMessages.forEach(message -> {
-             (message);
+             System.out.println(message);
         });
-         (create());
-         (create());
+         System.out.println(create());
+         System.out.println(create());
         entityManager.clear();
         
     }
@@ -38,7 +38,7 @@ public class JpaApplication {
     static String create() {
         EntityManager entityManager = factory.createEntityManager();
         Scanner s = new Scanner(System.in);
-         ("Enter message: ");
+         System.out.println("Enter message: ");
         String message = s.nextLine();
         Helloworld h = new Helloworld(message);
         entityManager.getTransaction().begin();
