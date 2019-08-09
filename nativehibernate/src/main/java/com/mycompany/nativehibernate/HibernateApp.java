@@ -24,12 +24,12 @@ public class HibernateApp {
             helloworld.setMessage("hellooabc");
             session.save(helloworld);
             
-            System.out.println("Successfully inserted");
+             ("Successfully inserted");
             List<Helloworld> all = 
                     session.createNativeQuery("select * from helloworld", Helloworld.class).getResultList();
             
             all.forEach(message -> {
-                System.out.println(message);
+                 (message);
             });
             tr.commit();
         } catch (Exception e) {

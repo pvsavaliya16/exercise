@@ -26,7 +26,7 @@ public class PersonDaoImpl implements PersonDao {
         entityManager.getTransaction().begin();
         entityManager.persist(person);
         entityManager.getTransaction().commit();
-        System.out.println("\n\n\n\n Created");
+         ("\n\n\n\n Created");
         
 
     }
@@ -58,7 +58,7 @@ public class PersonDaoImpl implements PersonDao {
     public void updatePerson(Long id, Person person) {
         Person oldPerson = entityManager.find(Person.class, id);
      
-        System.out.println("\n\n\n\n Updated");
+         ("\n\n\n\n Updated");
 
     }
 
@@ -67,7 +67,7 @@ public class PersonDaoImpl implements PersonDao {
     public void removePerson(Long id) {
         Person old = entityManager.find(Person.class, id);
         entityManager.remove(old);
-        System.out.println("\n\n\n\n Removed");
+         ("\n\n\n\n Removed");
 
     }
 
