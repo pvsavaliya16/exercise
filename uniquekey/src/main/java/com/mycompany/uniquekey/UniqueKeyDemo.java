@@ -17,12 +17,12 @@ public class UniqueKeyDemo {
 
     public static void main(String[] args) {
         PersonDao personRepo = new PersonDaoImpl();
-         ("All people : ");
+         System.out.println("All people : ");
         Person p = new Person();
         p.setName("parth");
         p.setPhone("9876543210");
         personRepo.addPerson(p);
         //  (personRepo.getAllPersons());
-         ("Adding....");
+         System.out.println("Adding....");
     }
 }

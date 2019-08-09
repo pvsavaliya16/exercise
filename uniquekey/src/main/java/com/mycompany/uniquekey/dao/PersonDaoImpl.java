@@ -1,8 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package com.mycompany.uniquekey.dao;
 
 import com.mycompany.uniquekey.model.Person;
@@ -26,7 +22,6 @@ public class PersonDaoImpl implements PersonDao {
         entityManager.getTransaction().begin();
         entityManager.persist(person);
         entityManager.getTransaction().commit();
-         ("\n\n\n\n Created");
         
 
     }
@@ -57,8 +52,6 @@ public class PersonDaoImpl implements PersonDao {
     @Transactional
     public void updatePerson(Long id, Person person) {
         Person oldPerson = entityManager.find(Person.class, id);
-     
-         ("\n\n\n\n Updated");
 
     }
 
@@ -67,7 +60,6 @@ public class PersonDaoImpl implements PersonDao {
     public void removePerson(Long id) {
         Person old = entityManager.find(Person.class, id);
         entityManager.remove(old);
-         ("\n\n\n\n Removed");
 
     }
 
